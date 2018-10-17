@@ -28,6 +28,7 @@ $(document).ready(function () {
 function clickInput() {
     $("input").on("click", function () {
         comparacion($("input:checked").val())
+        $("input").not(this).attr("disabled",true);
     })
 }
 function Preguntas() {
